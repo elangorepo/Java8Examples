@@ -1,24 +1,22 @@
 package com.example.defaultMethod;
 
-import org.junit.Test;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+class SampleTest {
 
-public class SampleTest {
-
-    @org.junit.jupiter.api.BeforeEach
+    @BeforeEach
     void setUp() {
     }
 
-    @org.junit.jupiter.api.AfterEach
+    @AfterEach
     void tearDown() {
     }
 
     @Test
-    public void Check()
-    {
+    void check() {
         Sample test = new Sample();
         test.check();
-
     }
 }
