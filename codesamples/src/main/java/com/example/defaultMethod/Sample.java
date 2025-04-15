@@ -5,4 +5,11 @@ public class Sample implements ISample {
     public void check() {
         System.out.println("first implementation");
     }
+
+    @Override
+    public void enforce() {
+        System.out.println(" Implement for Sample Class");
+    }
+
+
 }

@@ -5,4 +5,10 @@ public class AnotherSample implements ISample {
     public void check() {
         System.out.println("Another Implementation");
     }
+
+    @Override
+    public void enforce() {
+
+        System.out.println("Implementing for another sample");
+    }
 }

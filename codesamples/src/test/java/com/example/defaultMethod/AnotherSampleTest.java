@@ -18,6 +18,7 @@ class AnotherSampleTest {
     void check() {
         AnotherSample test = new AnotherSample();
         test.check();
+        test.newMethod();
 
     }
 }

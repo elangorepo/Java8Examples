@@ -4,10 +4,14 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.*;
 class SampleTest {
+
+    ISample test = new Sample();
 
     @BeforeEach
     void setUp() {
+
     }
 
     @AfterEach
@@ -15,8 +19,17 @@ class SampleTest {
     }
 
     @Test
+    void newMethod() {
+        System.out.println(test.newMethod());
+    }
+
+    @Test
     void check() {
-        Sample test = new Sample();
         test.check();
+    }
+
+    @Test
+    void enforce() {
+        test.enforce();
     }
 }
